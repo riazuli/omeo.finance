@@ -46,7 +46,7 @@
                     <a class="nav-link" href="#">How It Works</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Audits</a>
+                    <a class="nav-link" href="#buyExchangeModal" data-toggle="modal" data-target="#buyExchangeModal">Audits</a>
                   </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
@@ -54,7 +54,7 @@
                     <a class="nav-link secondary-btn" href="#walletStatisticModal"  data-toggle="modal" data-target="#walletStatisticModal">Wallet Statistics</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link secondary-btn bordered" href="#">Deposit</a>
+                    <a class="nav-link secondary-btn bordered"  href="#depositModal"  data-toggle="modal" data-target="#depositModal">Deposit</a>
                   </li>
                 </ul>
               </div>
@@ -534,52 +534,231 @@
     </div>
     <!-- Footer end -->
 
-     <!-- Modal Start -->
-     <div class="modal fade omeo-modal" id="conionModal" tabindex="-1" role="dialog" aria-labelledby="omeoModalTitle" aria-hidden="true">
+     
+    <!-- Wallet Statistic Modal Start -->
+     <div class="modal fade omeo-modal" id="walletStatisticModal" tabindex="-1" role="dialog" aria-labelledby="omeoModalTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-body">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true"><img src="assets/img/close.png" alt=""></span>
+              <span aria-hidden="true"><img src="assets/img/close.svg" alt=""></span>
             </button>
-            <div class="single-interest color">
-              <h4 class="text-center">Your Tron Wallet Address</h4>
-              <div class="module-box bigger">
-                <div class="modulebox-inner">
-                  <p><span id="user-wallet-3"></span></p>
+            <div class="title">
+              <h2>Wallet Statistics</h2>
+              <p>Your Wallet Address</p>
+              <div class="d-block">
+                <div class="code-box">
+                  <p>TGAB1xvRTmmwatmg1eXTb6YSsqpFscL9Td</p>
                 </div>
               </div>
             </div>
-            <div class="single-interest color">
-              <h4 class="text-center">Make New Deposit</h4>
-              <div class="row bigger align-items-center">
-                <div class="col-md-6 text-right">
-                  Specify Import :
-                </div>
-                <div class="col-md-6">
-                  <div class="bordered">
-                    <input type="text" id="deposit-amount-2" value="10">TRX
+            <div class="single-stat">
+              <div class="form-row align-items-center">
+                <div class="col-lg-6 line">
+                  <div class="text-center">
+                    <h4>Your current daily profit</h4>
+                    <h2 class="bigger-green">+0.05%</h2>
                   </div>
                 </div>
+                <div class="col-lg-6">
+                  <p>Basic profit: <span>+1%</span></p>
+                  <p>Hold-bonus: <span>+0.1%</span></p>
+                  <p>Contract-bonus: <span>+0.4%</span></p>
+                </div>
               </div>
-              <a href="#" id="deposit-2" class="module-box box-btn"><span class="modulebox-inner">Deposit Now</span></a>
             </div>
-            <div class="single-interest color">
-              <h4 class="text-center">Your Referral Link:</h4>
-              <div class="bordered text-center">
-                <p><span id="ref-url-2"></span></p>
+            <div class="single-stat">
+              <div class="form-row align-items-center">
+                <div class="col-lg-6">
+                  <h4>Available withdraw balance:</h4>
+                  <p><img src="assets/img/omeo-small.svg" alt="">  103.934.543,0942</p>
+                </div>
+                <div class="col-lg-6">
+                  <div class="text-center">
+                    <h4>Request withdraw</h4>
+                    <a href="#" class="green-btn">WITHDRAW</a>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <p class="smaller text-center">Click Withdraw button, and you will get instantly all your deposits earnings with a single transaction. Your personal hold-bonus will be reseted. You should have at least 3-5 TRX on your wallet balance for blockchain commission.</p>
+                </div>
               </div>
-              <a href="#" id="copy-ref-2" class="module-box box-btn"><span class="modulebox-inner">Copy Referral Link</span></a>
-              <div class="text-center nopd">
-                <p>*Minimal deposit: 10 TRX</p>
-                <p>*Total income: 200% (deposit included)</p>
-                <p>*Withdraw comes instantly on your wallet</p>
+            </div>
+            <div class="single-stat">
+              <div class="form-row align-items-center">
+                <div class="col-lg-6 line">
+                  <h4>Total Invested :</h4>
+                  <p><img src="assets/img/omeo-small.svg" alt="">  208.008.103,3280</p>
+                </div>
+                <div class="col-lg-6">
+                  <p>Number of deposit: 0</p>
+                  <p>Last deposit date:</p>
+                  <p>No deposit</p>
+                </div>
+              </div>
+            </div>
+            <div class="single-stat">
+              <div class="form-row align-items-center">
+                <div class="col-lg-6 line">
+                  <h4>Total earned:</h4>
+                  <p><img src="assets/img/omeo-small.svg" alt=""> 208.008.103,3280</p>
+                </div>
+                <div class="col-lg-6">
+                  <h4>Total Withdrawn:</h4>
+                  <p><img src="assets/img/omeo-small.svg" alt=""> 392.034.093,08493</p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <h4 class="link-title">Your Referral Link</h4>
+              <div class="d-block my-3">
+                <div class="link-wrap">
+                  <p>https://omeo.finance/?ref=Td98</p>
+                </div>
+              </div>
+              <a href="#" class="green-btn smaller mb-3">Copy referral link</a>
+              <p class="check-text"><img src="assets/img/check.svg" alt=""> Share this link with your partners to get referral rewards</p>
+              <p class="check-text"><img src="assets/img/check.svg" alt="">You should have active deposit to unlock affiliate bonuses! You will get no rewards without active deposit</p>
+              <p class="check-text"><img src="assets/img/check.svg" alt="">Every new deposit can be made with different uplines</p>
+            </div>
+            
+            <div class="single-stat mt-3">
+              <div class="form-row align-items-center">
+                <div class="col-lg-6 line">
+                  <h4>Referral rewards  :</h4>
+                  <p><img src="assets/img/omeo-small.svg" alt=""> 208.008.103,3280</p>
+                  <h4>Upline refback percent  :</h4>
+                  <p class="bigger-green sm">0 %</p>
+                </div>
+                <div class="col-lg-6">
+                  <p>1- First level: 0</p>
+                  <p>2- Second level: 0</p>
+                  <p>3- Third level: 0</p>
+                  <p>4- Fourth level: 0</p>
+                  <p>5- Fifth level: 0</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="text-center">
+              <h4 class="link-title">Refback percent (current percent is 0%) :</h4>
+              <div class="d-block my-3">
+                <div class="link-wrap">
+                  <p>0</p>
+                </div>
+              </div>
+              <a href="#" class="green-btn smaller mb-3">Set Refback</a>
+              <p class="check-text"><img src="assets/img/check.svg" alt=""> You can share your affiliate earnings with your partners automatically due auto-refback system. You can setup 0 - 100% auto-refback</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Wallet Statistic Modal End -->
+     
+    <!-- Deposit Modal Start -->
+     <div class="modal fade omeo-modal" id="depositModal" tabindex="-1" role="dialog" aria-labelledby="omeoModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="assets/img/close.svg" alt=""></span>
+            </button>
+            <div class="title">
+              <h2>Make New Deposit</h2>
+            </div>
+            <div class="form-row align-items-center">
+              <div class="col-lg-7">
+                <div class="left-texts">
+                  <p class="bolder mt-4">When you get the OME in your wallet you can invest it by clicking the Deposit Button.</p>
+                  <p class="bolder"> <img src="assets/img/notice-emoji.svg" alt=""> <span>IMPORTANT! Do not forget about blockchain fee!</span> You should have 2-5 TRX more on your wallet, or your transaction will get out of energy status!</p>
+                  <p>We are working only with OME cryptocurrency.</p>
+                  <p>Your deposit will be activated after 1 confirmation in blockchain.</p>
+                  <p>Earnings comes every moment on your wallet balance, you can withdraw it any time you want.</p>
+                </div>
+              </div>
+              <div class="col-lg-5 text-center">
+                <div class="p-2">
+                  <p>Your Address</p>
+                  <div class="d-block">
+                    <div class="code-box">
+                      <p>TV4GHS83UKO553LSD69</p>
+                    </div>
+                  </div>
+                  <p>Specify deposit OME amount here</p>
+                  <div class="d-block">
+                    <div class="code-box">
+                      <p>100 OME</p>
+                    </div>
+                  </div>
+                  <a href="#" class="green-btn mb-3">Deposit Now!</a>
+                  <p><img src="assets/img/notice-emoji.svg" alt=""><span>IMPORTANT! Do not send other coins!</span></p>
+                  <p>Only OME deposit will be accepted, all other coins (like TRX, BTT etc.) will be lost without refund!</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Deposit Modal End -->
+
+
+    <!-- Buy/Exchange Modal Start -->
+     <div class="modal fade omeo-modal" id="buyExchangeModal" tabindex="-1" role="dialog" aria-labelledby="omeoModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="assets/img/close.svg" alt=""></span>
+            </button>
+            <div class="title">
+              <h2 class="smaller">Companies which let Buy or Exchange TRX </h2>
+            </div>
+            <div class="form-row align-items-center">
+              <div class="col-lg-6">
+                <div class="logo-wrap">
+                  <span class="title">1 - </span>
+                  <div class="logo-wrap-inner">
+                    <img src="assets/img/Binance.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="logo-wrap">
+                  <span class="title">2 - </span>
+                  <div class="logo-wrap-inner">
+                    <img src="assets/img/cangelly.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <img src="assets/img/long-line.svg" alt="">
+            </div>
+            <div class="form-row align-items-center">
+              <div class="col-lg-6">
+                <div class="logo-wrap">
+                  <span class="title">3 - </span>
+                  <div class="logo-wrap-inner">
+                    <img src="assets/img/Poloniex_logo.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="logo-wrap">
+                  <span class="title">4 - </span>
+                  <div class="logo-wrap-inner">
+                    <img src="assets/img/kraken.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Buy/Exchange Modal End -->
 
     <!-- jQuery library -->
     <script src="assets/js/jquery.slim.min.js"></script>

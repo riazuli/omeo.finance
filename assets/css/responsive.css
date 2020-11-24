@@ -139,6 +139,28 @@
   .footer .title {
     margin-top: 25px;
   }
+  .omeo-modal .line {
+    padding-right: 15px;
+  }
+
+  .omeo-modal .line:after {
+    display: none;
+  }
+
+  .code-box {
+    min-width: auto;
+  }
+
+  .omeo-modal .title {
+    padding: 0px;
+  }
+
+  .omeo-modal .text-center {
+    margin-top: 15px;
+  }
+  .omeo-modal .title h2 {
+    padding: 0px 50px;
+  }
 }
 
 /* Mobile Layout: 320px. */
@@ -232,5 +254,31 @@
   .work-section:after,
   .solution-section::after {
     display: none;
+  }
+  .omeo-modal .modal-dialog .modal-content .modal-body {
+    padding: 20px 10px;
+  }
+
+  .omeo-modal .close img {
+    max-width: 40px;
+  }
+
+  .omeo-modal .title h2 {
+    font-size: 24px;
+  }
+
+  .logo-wrap {
+    padding: 5px;
+  }
+  .code-box {
+    padding: 10px;
+  }
+
+  .single-stat {
+    padding: 15px;
+  }
+
+  .omeo-modal .modal-dialog .modal-content {
+    border-radius: 20px;
   }
 }
