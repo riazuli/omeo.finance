@@ -2,18 +2,235 @@
 @media only screen and (min-width: 1900px) {
 }
 
-
 /* Medium Layout: 1280px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .footer-bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+    border-top: 1px solid #657786;
+    margin-top: 30px;
+  }
 
+  .footer-bottom .copyright {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+
+    /* identical to box height, or 100% */
+    color: #657786;
+  }
+
+  .footer-bottom .links {
+    text-align: right;
+  }
+
+  .footer-bottom .links a {
+    display: inline-block;
+    padding: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .box-btn {
+    background: #141e27;
+    border-radius: 3px;
+    padding: 5px;
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+
+    /* identical to box height, or 100% */
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+
+  .footer-bottom .links a.box-btn {
+    padding: 5px 15px;
+    margin-left: 10px;
+  }
+
+  .box-btn img {
+    padding-right: 5px;
+  }
+
+  .box-btn:hover {
+    color: #fff;
+    opacity: 0.9;
+  }
+
+  .footer-bottom .links a:hover {
+    opacity: 0.8;
+  }
+
+  .footer ul li a:hover {
+    opacity: 0.8;
+    color: #657786;
+  }
+
+  .header .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 12px;
+    text-align: center;
+    align-self: center;
+  }
+
+  .header .navbar .navbar-brand img {
+    max-width: 180px;
+  }
+
+  .hero-area .hero-text h1 {
+    font-size: 42px;
+  }
+
+  .single-statistics .price img {
+    margin-bottom: 10px;
+  }
+
+  .single-investment .top-text {
+    display: block;
+  }
+
+  .bordered-btn {
+    font-size: 12px;
+    padding: 8px;
+  }
 }
 
 /* Tablet Layout: 768px. */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
+  .navbar-toggler {
+    color: #fff;
+  }
 
+  .navbar-collapse {
+    background: #070a0e;
+  }
+
+  .secondary-btn {
+    display: inline-block;
+    margin: 10px 0px;
+  }
+
+  .single-statistics {
+    min-height: 100px;
+  }
+
+  .single-investment:after {
+    display: none;
+  }
+
+  .single-box .arrow-down {
+    display: none;
+  }
+
+  .single-box {
+    max-width: unset;
+  }
+
+  .col-lg-4:nth-child(2) .single-box {
+    margin-top: 30px;
+  }
+
+  .col-lg-4:nth-child(3) .single-box {
+    margin-top: 30px;
+  }
+  .footer .title {
+    margin-top: 25px;
+  }
 }
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
+  .footer .title {
+    margin-top: 25px;
+  }
 
+  .header .navbar .navbar-brand img {
+    max-width: 150px;
+  }
+
+  .hero-area .hero-text {
+    padding-left: 0px;
+  }
+
+  .hero-area .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .section-heading h2 {
+    font-size: 36px;
+  }
+
+  .section-heading p {
+    font-size: 20px;
+  }
+
+  .features-section:before {
+    display: none;
+  }
+
+  .single-feature {
+    padding: 30px 20px;
+  }
+
+  .single-feature h4 {
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
+
+  .single-feature p {
+    font-size: 18px;
+  }
+
+  .single-feature .transparent-btn {
+    margin-top: 15px;
+  }
+
+  .single-statistics h4 {
+    margin-bottom: 10px;
+  }
+
+  .single-investment .top-text {
+    display: block;
+  }
+
+  .single-box h4 {
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+
+  .single-audit.bg .inner {
+    width: 100%;
+  }
+
+  .single-audit.bg {
+    background-image: unset;
+  }
+
+  .single-audit.bg .inner .logo h4 {
+    font-size: 26px;
+  }
+
+  .single-audit .logo {
+    padding-bottom: 0px;
+  }
+
+  .bordered-btn {
+    margin-top: 15px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .footer-bottom .links {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .work-section:after,
+  .solution-section::after {
+    display: none;
+  }
 }
