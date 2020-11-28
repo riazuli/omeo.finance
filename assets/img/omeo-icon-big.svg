@@ -1,20 +1,8 @@
 <svg width="868" height="719" viewBox="0 0 868 719" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g style="mix-blend-mode:luminosity" opacity="0.06" filter="url(#filter0_i)">
+<g style="mix-blend-mode:luminosity" opacity="0.06">
 <circle cx="314.5" cy="165.5" r="479.276" stroke="#00D395" stroke-width="148.448"/>
 <rect x="240.7" y="-55.8998" width="147.6" height="442.8" rx="73.8" fill="#00D395"/>
 <rect x="19.3009" y="-55.8998" width="147.6" height="442.8" rx="73.8" fill="#00D395"/>
 <rect x="462.1" y="-55.8998" width="147.6" height="442.8" rx="73.8" fill="#00D395"/>
 </g>
-<defs>
-<filter id="filter0_i" x="-239" y="-388" width="1107.42" height="1107.42" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dx="29.3894" dy="29.3894"/>
-<feGaussianBlur stdDeviation="0.212069"/>
-<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
-</filter>
-</defs>
 </svg>

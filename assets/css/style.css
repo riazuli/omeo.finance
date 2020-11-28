@@ -131,9 +131,9 @@ button:focus {
   background-size: contain;
   background-position: left top;
   background-repeat: no-repeat;
-  background-image: url(../img/omeo-icon-big.svg);
+  background-image: url(../img/omeo-icon-big-black.png);
   mix-blend-mode: luminosity;
-  opacity: 0.16;
+  opacity: 0.6;
 }
 .hero-area .hero-text {
   padding-left: 40px;
